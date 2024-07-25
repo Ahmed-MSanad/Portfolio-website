@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body class="dark:bg-black dark:text-white dark:border-white">
+
+    <header class="px-4 fixed top-0 left-0 right-0 bg-white dark:bg-black z-50">
+        <nav class="container mx-auto py-4 flex justify-between items-center relative">
+            <div class="">
+                <a href="#" class="font-extrabold text-4xl relative after:absolute after:w-[10px] after:h-[10px] after:bg-fuchsia-600 after:bottom-2 after:rounded-full">Sanad</a>
+            </div>
+            <div class="nav-links absolute hidden bg-white dark:bg-black dark:text-white top-full w-full text-center lg:w-auto lg:relative lg:!block lg:bg-transparent">
+                <ul class="space-y-5 py-4 px-12 w-full bg-white dark:bg-black lg:w-auto shadow-md dark:shadow-[#4d4d4d8b] text-nowrap lg:rounded-full lg:flex lg:space-x-5 lg:space-y-0">
+                    <li class="lg:bg-transparent lg:dark:bg-transparent animated-links border-b pb-2 lg:border-0"><a class="relative pb-1" href="#home">Home</a></li> <!-- active --> <!--  -->
+                    <li class="lg:bg-transparent lg:dark:bg-transparent animated-links border-b pb-2 lg:border-0"><a class="relative pb-1" href="#aboutMe">About Me</a></li> <!-- link_line --> <!--  -->
+                    <li class="lg:bg-transparent lg:dark:bg-transparent animated-links border-b pb-2 lg:border-0"><a class="relative pb-1" href="#services">Services</a></li> <!-- link_line --> <!--  -->
+                    <li class="lg:bg-transparent lg:dark:bg-transparent animated-links border-b pb-2 lg:border-0"><a class="relative pb-1" href="#myWork">My Work</a></li> <!-- link_line --> <!--  -->
+                    <li class="lg:bg-transparent lg:dark:bg-transparent animated-links border-b pb-2 lg:border-0"><a class="relative pb-1" href="#contactMe">Contact Me</a></li> <!-- link_line --> <!--  -->
+                </ul>
+            </div>
+            <div class="space-x-6">
+                <i id="darkModeBtn" class="fa-regular fa-sun text-2xl cursor-pointer"></i>
+                <button class="border border-black dark:border-white py-4 px-4 md:py-4 md:px-10 rounded-full">Contact <i class="fa-solid fa-up-right-from-square ms-2"></i></button>
+            </div>
+            <div class="text-3xl dark:text-white lg:hidden">
+                <button id="openBtn" class=""><i class= "w-[30px] fa-solid fa-bars cursor-pointer"></i></button>
+                <button id="closeBtn" class="hidden"><i class= "w-[30px] fa-solid fa-xmark cursor-pointer"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="h-screen" id="home">
+            <div class="container mx-auto p-5 mt-24 flex flex-wrap justify-center items-center">
+                <div class="lg:w-4/12 space-y-4">
+                    <div>
+                        <span>Hi There</span>
+                        <h1 class="text-5xl">I'm <span class="text-rose-600 dark:text-cyan-500">Ahmed Mahmoud Sanad</span></h1>
+                    </div>
+                    <p class="moving-title">
+                        <span class="relative text-nowrap after:absolute after:top-0 after:-right-[10px] after:bottom-0 text-lg text-rose-600 dark:text-cyan-600 after:bg-black after:dark:bg-white after:px-[1.5px] shown">Frontend Developer</span>
+                        <span class="relative text-nowrap after:absolute after:top-0 after:-right-[10px] after:bottom-0 text-lg text-rose-600 dark:text-cyan-600 after:bg-black after:dark:bg-white after:px-[1.5px] hidden">Problem solving obsessed</span>
+                        <span class="relative text-nowrap after:absolute after:top-0 after:-right-[10px] after:bottom-0 text-lg text-rose-600 dark:text-cyan-600 after:bg-black after:dark:bg-white after:px-[1.5px] hidden">Ambitious Programmer</span>
+                        <span class="relative text-nowrap after:absolute after:top-0 after:-right-[10px] after:bottom-0 text-lg text-rose-600 dark:text-cyan-600 after:bg-black after:dark:bg-white after:px-[1.5px] hidden">Angular Learner</span>
+                    </p>
+                    <ul class="dark:text-white flex space-x-5 text-2xl">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/Ahmed-MSanad"><i class="fa-brands fa-github"></i></a></li>
+                    </ul>
+                    <div class="space-x-2">
+                        <button id="projectsBtn" class="px-10 py-4 rounded-lg border border-rose-600 dark:border-cyan-500 dark:bg-cyan-500">Projects</button>
+                        <button id="cvBtn" class="px-10 py-4 rounded-lg border border-rose-600 text-rose-600 hover:text-white hover:bg-rose-600 dark:border-cyan-500 dark:text-cyan-500 dark:hover:bg-cyan-500 dark:hover:text-white transition-all duration-500">CV</button>
+                    </div>
+                </div>
+                <div class="max-w-[50%] lg:w-8/12">
+                    <img src="images/personal_2.png" alt="personal img" class="w-full rounded-full">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-300 dark:bg-gray-800 py-10" id="aboutMe">
+            <div class="container mx-auto p-5">
+                <h2 class="text-center text-4xl my-4">About Me</h2>
+                <div class="flex items-end justify-center lg:space-x-5 flex-wrap lg:flex-nowrap">
+                    <div class="max-w-[50%] lg:w-3/12">
+                        <img src="images/personal_2.png" alt="personal img" class="w-full rounded-full">
+                    </div>
+                    <div class="lg:w-9/12">
+                        <p class="my-4">
+                            I'm experienced front end Developer, I did many projects throughout my career, Have a look of my projects 💙
+                        </p>
+                        <div class="flex space-y-4 lg:space-y-0 lg:space-x-4 flex-wrap lg:flex-nowrap my-4 lg:my-0">
+                            <div class="p-6 border rounded-lg dark:text-white w-full lg:w-4/12 hover:shadow-md dark:shadow-white hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300">
+                                <i class="fa-solid fa-arrow-trend-up text-2xl"></i>
+                                <h2 class="font-bold">Languages, Frameworks</h2>
+                                <p class="text-gray-400">HTML, CSS, Bootstrap, TailwindCSS, JS</p>
+                            </div>
+                            <div class="p-6 border rounded-lg dark:text-white w-full lg:w-4/12 hover:shadow-md dark:shadow-white hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300">
+                                <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                                <h2 class="font-bold">Education</h2>
+                                <p class="text-gray-400">Benha University, Shoubra faculty of Engineering, Computer Engineering</p>
+                            </div>
+                            <div class="p-6 border rounded-lg dark:text-white w-full lg:w-4/12 hover:shadow-md dark:shadow-white hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300">
+                                <i class="fa-solid fa-briefcase text-2xl"></i>
+                                <h2 class="font-bold">Projects</h2>
+                                <p class="text-gray-400">Built many projects</p>
+                            </div>
+                        </div>
+                        <div class="my-4">
+                            <h2>Tools I use</h2>
+                            <ul class="flex space-x-4 my-4">
+                                <li class="border p-2 rounded-md"><img src="images/figma.png" alt="figma" class="w-[25px]"></li>
+                                <li class="border p-2 rounded-md"><img src="images/git.png" alt="git" class="w-[25px]"></li>
+                                <li class="border p-2 rounded-md"><img src="images/vscode.png" alt="vsCode" class="w-[25px]"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dark:bg-black py-10" id="services">
+            <div class="container mx-auto p-5">
+                <div class="text-center my-4">
+                    <span>What i offer</span>
+                    <h2 class="h2-settings my-5">My Services</h2>
+                    <p>
+                        I'm a frontend developer from Egypt, with a year of experience in making many projects
+                    </p>
+                </div>
+                <div class="flex items-center justify-center space-y-5 lg:space-y-0 lg:space-x-10 my-5 flex-wrap">
+                    <div class="lg:w-4/12 border dark:border-cyan-500 p-8 rounded-2xl text-center">
+                        <img src="images/web-icon.png" alt="web-icon" class="w-[25px] mx-auto">
+                        <h3 class="my-2">Web Design</h3>
+                        <p class="line-clamp-2">Web development is the process of building, creating, and maintaining websites or web applications that run on the Internet or an intranet. It involves a range of tasks, including coding, designing, and ensuring the performance of a website</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="lg:w-4/12 border dark:border-cyan-500 p-8 rounded-2xl text-center">
+                        <img src="images/ui-icon.png" alt="ui-icon" class="w-[25px] mx-auto">
+                        <h3 class="my-2">UI/UX Design</h3>
+                        <p class="line-clamp-2">Web development is the process of building, creating, and maintaining websites or web applications that run on the Internet or an intranet. It involves a range of tasks, including coding, designing, and ensuring the performance of a website</p>
+                        <a href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-slate-300 dark:bg-gray-800 py-10" id="myWork">
+            <div class="container mx-auto p-5">
+                <div class="text-center">
+                    <span>My Portfolio</span>
+                    <h2 class="h2-settings">My Latest Work</h2>
+                    <p class="text-slate-300">Explore a collection of projects showcasing my expertise in front-end development.</p>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full lg:w-3/12 p-5 relative">
+                        <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                            <img src="images/work-1.png" alt="work-1" class="w-full group-hover:scale-150 transition-all">
+                            <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                <div>
+                                    <h3 class="font-bold">Yummy Project</h3>
+                                    <span class="text-cyan-600">Web Design</span>
+                                </div>
+                                <a href="https://ahmed-msanad.github.io/find-your-favourite-recipe-app/" class="">
+                                    <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-3/12 p-5 relative">
+                        <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                            <img src="images/work-2.png" alt="work-2" class="w-full group-hover:scale-150 transition-all">
+                            <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                <div>
+                                    <h3 class="font-bold">Explore Transactions</h3>
+                                    <span class="text-cyan-600">Web Design</span>
+                                </div>
+                                <a href="https://ahmed-msanad.github.io/Explore_transaction_data_app/" class="">
+                                    <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-3/12 p-5 relative">
+                        <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                            <img src="images/work-3.png" alt="work-3" class="w-full group-hover:scale-150 transition-all">
+                            <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                <div>
+                                    <h3 class="font-bold">Quiz Application</h3>
+                                    <span class="text-cyan-600">Web Design</span>
+                                </div>
+                                <a href="https://ahmed-msanad.github.io/Quiz_web_app/" class="">
+                                    <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="w-full lg:w-3/12 p-5 relative">
+                        <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                            <img src="images/work-4.png" alt="work-4" class="w-full group-hover:scale-150 transition-all">
+                            <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                <div>
+                                    <h3 class="font-bold">Find Your Lovely Game</h3>
+                                    <span class="text-cyan-600">Web Design</span>
+                                </div>
+                                <a href="https://ahmed-msanad.github.io/Games-API-Application/" class="">
+                                    <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-4">
+                    <button id="showMoreBtn" class="btn hover:bg-cyan-600 transition-all">Show more <i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-10" id="contactMe">
+            <div class="container mx-auto p-5">
+                <div class="text-center">
+                    <span>Contact With Me</span>
+                    <h2 class="h2-settings">Get in touch</h2>
+                    <p>I'd love to hear from you! if you have any questions, comments or feedback, please get in touch as soon as possible.</p>
+                </div>
+                <div class="">
+                    <form class="">
+                        <div class="flex space-y-5 lg:space-y-0 lg:space-x-5 my-5 flex-wrap lg:flex-nowrap">
+                            <input type="text" name="sender-name" class="w-full lg:w-1/2 py-2 px-4 rounded-lg border border-black text-black" placeholder="Enter your name">
+                            <input type="email" name="sender-email" class="w-full lg:w-1/2 py-2 px-4 rounded-lg border border-black text-black" placeholder="Enter your email">
+                        </div>
+                        <textarea name="sender-message" id="" rows="15" class="w-full rounded-lg p-5 border border-black text-black" placeholder="Write your message here"></textarea>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="hidden">
+            <div class="container mx-auto mt-24 lg:mt-0 lg:h-screen lg:flex lg:items-center lg:justify-center">
+                <div>
+                    <div class="relative">
+                        <h2 class="h2-settings text-center">My Work</h2>
+                        <button id="closeShowMoreBtn" class="absolute top-0 right-[5px] text-4xl"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                    <div class="flex flex-wrap">
+                        <div class="w-full lg:w-3/12 p-5 relative">
+                            <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                                <img src="images/work-1.png" alt="work-1" class="w-full group-hover:scale-150 transition-all">
+                                <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                    <div>
+                                        <h3 class="font-bold">Yummy Project</h3>
+                                        <span class="text-cyan-600">Web Design</span>
+                                    </div>
+                                    <a href="https://ahmed-msanad.github.io/find-your-favourite-recipe-app/" class="">
+                                        <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="w-full lg:w-3/12 p-5 relative">
+                            <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                                <img src="images/work-2.png" alt="work-2" class="w-full group-hover:scale-150 transition-all">
+                                <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                    <div>
+                                        <h3 class="font-bold">Explore Transactions</h3>
+                                        <span class="text-cyan-600">Web Design</span>
+                                    </div>
+                                    <a href="https://ahmed-msanad.github.io/Explore_transaction_data_app/" class="">
+                                        <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="w-full lg:w-3/12 p-5 relative">
+                            <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                                <img src="images/work-3.png" alt="work-3" class="w-full group-hover:scale-150 transition-all">
+                                <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                    <div>
+                                        <h3 class="font-bold">Quiz Application</h3>
+                                        <span class="text-cyan-600">Web Design</span>
+                                    </div>
+                                    <a href="https://ahmed-msanad.github.io/Quiz_web_app/" class="">
+                                        <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="w-full lg:w-3/12 p-5 relative">
+                            <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                                <img src="images/work-4.png" alt="work-4" class="w-full group-hover:scale-150 transition-all">
+                                <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                    <div>
+                                        <h3 class="font-bold">Find Your Lovely Game</h3>
+                                        <span class="text-cyan-600">Web Design</span>
+                                    </div>
+                                    <a href="https://ahmed-msanad.github.io/Games-API-Application/" class="">
+                                        <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="w-full lg:w-3/12 p-5 relative">
+                            <div class="inner overflow-hidden rounded-lg cursor-pointer group">
+                                <img src="images/work-4.png" alt="work-4" class="w-full group-hover:scale-150 transition-all">
+                                <div class="absolute bottom-10 start-10 end-10 py-2 px-5 rounded-lg flex justify-between items-center bg-white text-black">
+                                    <div>
+                                        <h3 class="font-bold">Weather Forecast</h3>
+                                        <span class="text-cyan-600">Web Design</span>
+                                    </div>
+                                    <a href="https://ahmed-msanad.github.io/Weather_Forecast_App/" class="">
+                                        <i class="fa-regular fa-paper-plane border border-black w-[30px] h-[30px] rounded-full flex justify-center items-center hover:text-cyan-600 hover:bg-black transition-all"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
